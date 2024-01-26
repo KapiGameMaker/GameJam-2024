@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Bullet
+  - Punch
+  - Bone
+  - Bin
   layers:
   - Default
   - TransparentFX
