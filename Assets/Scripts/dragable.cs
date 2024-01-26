@@ -18,6 +18,8 @@ public class dragable : MonoBehaviour
 
     private TargetJoint2D m_TargetJoint;
 
+    [SerializeField] GameObject Enemy;
+    Item item;
     void Update()
     {
         // Calculate the world position for the mouse.
@@ -27,12 +29,16 @@ public class dragable : MonoBehaviour
         {
             // Fetch the first collider.
             // NOTE: We could do this for multiple colliders.
-            var collider = Physics2D.OverlapPoint(worldPos, m_DragLayers);
+            Collider2D collider = Physics2D.OverlapPoint(worldPos, m_DragLayers);
+            Enemy = collider.gameObject;
+            item = Enemy.GetComponent<Item>();
+            item.pickState = false;
             if (!collider)
                 return;
 
             // Fetch the collider body.
-            var body = collider.attachedRigidbody;
+            Rigidbody2D body = collider.attachedRigidbody;
+            body.constraints = RigidbodyConstraints2D.None;
             if (!body)
                 return;
 
@@ -46,6 +52,9 @@ public class dragable : MonoBehaviour
         }
         else if (Input.GetMouseButtonUp(0))
         {
+            item.pickState = true;
+            Enemy = null;
+            item = null;
             Destroy(m_TargetJoint);
             m_TargetJoint = null;
             return;
