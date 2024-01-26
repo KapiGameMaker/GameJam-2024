@@ -48,9 +48,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyRigidbody: {fileID: 5130668850610668427}
-  speed: 0
+  speed: 1000
   speed_cap: 0
-  lifespan: 5
+  weapon: 0
 --- !u!212 &8511913156615537092
 SpriteRenderer:
   m_ObjectHideFlags: 0
