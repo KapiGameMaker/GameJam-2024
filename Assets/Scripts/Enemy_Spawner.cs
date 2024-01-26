@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy_Spawner : MonoBehaviour
 {
     public float spawn_rate;
-    public GameObject bird_prefab;
+    public GameObject enemy_prefab;
 
     [HideInInspector] public float speed;
     public float speed_cap;
@@ -18,7 +18,7 @@ public class Enemy_Spawner : MonoBehaviour
     void Start()
     {
         setUp();
-        GameObject bird = Instantiate(bird_prefab, this.transform);
+        GameObject bird = Instantiate(enemy_prefab, this.transform);
         Enemy set = bird.GetComponent<Enemy>();
         set.speed = speed;
         set.speed_cap = speed_cap;
@@ -39,7 +39,7 @@ public class Enemy_Spawner : MonoBehaviour
 
     void Spawn_Enemy()
     {
-        GameObject bird = Instantiate(bird_prefab, this.transform);
+        GameObject bird = Instantiate(enemy_prefab, this.transform);
         Enemy set = bird.GetComponent<Enemy>();
         set.speed = speed;
         set.speed_cap = speed_cap;

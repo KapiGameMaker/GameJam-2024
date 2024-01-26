@@ -1,16 +1,16 @@
 [System.Serializable]
 public struct Wave
 {
-    // Declares the Mobs enum type.
-    public enum Mobs
+    public enum Enemy
     {
-        Goblin,
-        Slime,
-        Bat
+        Bird,
+        Dog,
+        Trash
     }
 
-    public Mobs mobs; // What kind of enemy should be spawned in this wave?
+    public Enemy enemy;
+
     public float spawn_time;
-    public float spawn_rate;
     public float speed;
+    public bool isLeft;
 }
