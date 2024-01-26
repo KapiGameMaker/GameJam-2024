@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f79f391313f98f94281291862d306c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 7058785305967970848}
   enemyRigidbody: {fileID: 5130668850610668427}
   speed: 0
   speed_cap: 0
+  lifespan: 5
