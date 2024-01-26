@@ -30,34 +30,41 @@ public class dragable : MonoBehaviour
             // Fetch the first collider.
             // NOTE: We could do this for multiple colliders.
             Collider2D collider = Physics2D.OverlapPoint(worldPos, m_DragLayers);
-            Enemy = collider.gameObject;
-            item = Enemy.GetComponent<Item>();
-            item.pickState = false;
-            if (!collider)
-                return;
+            if (collider != null) Enemy = collider.gameObject;
+            if (Enemy != null)
+            {
+                item = Enemy.GetComponent<Item>();
+                item.pickState = false;
+                if (!collider)
+                    return;
 
-            // Fetch the collider body.
-            Rigidbody2D body = collider.attachedRigidbody;
-            body.constraints = RigidbodyConstraints2D.None;
-            if (!body)
-                return;
+                // Fetch the collider body.
+                Rigidbody2D body = collider.attachedRigidbody;
+                body.constraints = RigidbodyConstraints2D.None;
+                if (!body)
+                    return;
 
-            // Add a target joint to the Rigidbody2D GameObject.
-            m_TargetJoint = body.gameObject.AddComponent<TargetJoint2D>();
-            m_TargetJoint.dampingRatio = m_Damping;
-            m_TargetJoint.frequency = m_Frequency;
+                // Add a target joint to the Rigidbody2D GameObject.
+                m_TargetJoint = body.gameObject.AddComponent<TargetJoint2D>();
+                m_TargetJoint.dampingRatio = m_Damping;
+                m_TargetJoint.frequency = m_Frequency;
 
-            // Attach the anchor to the local-point where we clicked.
-            m_TargetJoint.anchor = m_TargetJoint.transform.InverseTransformPoint(worldPos);
+                // Attach the anchor to the local-point where we clicked.
+                m_TargetJoint.anchor = m_TargetJoint.transform.InverseTransformPoint(worldPos);
+            }
+            
         }
         else if (Input.GetMouseButtonUp(0))
         {
-            item.pickState = true;
-            Enemy = null;
-            item = null;
-            Destroy(m_TargetJoint);
-            m_TargetJoint = null;
-            return;
+            if (Enemy != null)
+            {
+                item.pickState = true;
+                Enemy = null;
+                item = null;
+                Destroy(m_TargetJoint);
+                m_TargetJoint = null;
+                return;
+            }
         }
 
         // Update the joint target.

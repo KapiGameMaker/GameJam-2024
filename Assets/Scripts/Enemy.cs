@@ -4,16 +4,26 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    enum Weapon
+    {
+        Punch,
+        Bone,
+        Bin
+    }
+
     public Rigidbody2D enemyRigidbody;
     public float speed;
     public float speed_cap;
     public float lifespan;
 
     private float currentTime = 0f;
+
+    [SerializeField] Weapon weapon;
+    string weaponType;
     // Start is called before the first frame update
     void Start()
     {
-
+        SetUp();
     }
 
     // Update is called once per frame
@@ -27,5 +37,25 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
             currentTime = 0f;
         }
+    }
+
+    private void SetUp()
+    {
+        weaponType = weapon.ToString();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag(weaponType))
+        {
+            enemyRigidbody.constraints = RigidbodyConstraints2D.None;
+            StartCoroutine(Death());
+        }
+    }
+
+    IEnumerator Death()
+    {
+        yield return new WaitForSeconds(2f);
+        Destroy(gameObject);
     }
 }
