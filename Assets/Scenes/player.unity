@@ -420,6 +420,7 @@ MonoBehaviour:
   bird_prefab: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
   speed: -1000
   speed_cap: 1
+  lifespan: 2
 --- !u!4 &1285576250
 Transform:
   m_ObjectHideFlags: 0
@@ -525,6 +526,7 @@ MonoBehaviour:
   bird_prefab: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
   speed: -1000
   speed_cap: 0.2
+  lifespan: 2
 --- !u!4 &1868834138
 Transform:
   m_ObjectHideFlags: 0
