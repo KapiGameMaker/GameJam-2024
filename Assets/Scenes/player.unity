@@ -170,18 +170,18 @@ MonoBehaviour:
   wave:
   - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
     spawnPoint: {fileID: 1365493507}
-    spawn_time: 5
-    speed: 1
+    spawn_time: 1
+    speed: 5
     isLeft: 1
   - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
     spawnPoint: {fileID: 347569683}
-    spawn_time: 9
-    speed: 1
+    spawn_time: 2
+    speed: 5
     isLeft: 0
   - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
     spawnPoint: {fileID: 1128236699}
-    spawn_time: 10
-    speed: 1
+    spawn_time: 3
+    speed: 5
     isLeft: 1
 --- !u!1 &347569683
 GameObject:
