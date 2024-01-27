@@ -5,10 +5,10 @@ public struct Wave
 {
     public enum Weakness
     {
-        none,
-        punch,
-        bone,
-        trash
+        None,
+        Punch,
+        Bone,
+        Bin
     }
 
     public GameObject enemy;

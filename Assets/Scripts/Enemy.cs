@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    enum Weapon
-    {
-        Punch,
-        Bone,
-        Bin
-    }
 
     [SerializeField] AudioClip hit;
 
@@ -17,10 +11,11 @@ public class Enemy : MonoBehaviour
     public float speed;
     public float speed_cap;
 
-    private float currentTime = 0f;
+    public string weakness1;
+    public string weakness2;
+    bool isWeakness1hit = false;
+    bool isWeakness2hit = false;
 
-    [SerializeField] Weapon weapon;
-    string weaponType;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,12 +30,23 @@ public class Enemy : MonoBehaviour
 
     private void SetUp()
     {
-        weaponType = weapon.ToString();
+        if(weakness1 == "None") { isWeakness1hit = true; }
+        if (weakness2 == "None") { isWeakness2hit = true; }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag(weaponType))
+        if (collision.gameObject.CompareTag(weakness1))
+        {
+            isWeakness1hit=true;
+        }
+
+        if (collision.gameObject.CompareTag(weakness2))
+        {
+            isWeakness2hit = true;
+        }
+
+        if(isWeakness1hit && isWeakness2hit)
         {
             enemyRigidbody.constraints = RigidbodyConstraints2D.None;
             StartCoroutine(Death());
