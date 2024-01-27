@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class ScrollingBG : MonoBehaviour
 {
-    public float speed;
-    [SerializeField]
+    [SerializeField] float speed;
+    [SerializeField] float target;
 
-    private Renderer bgRenderer;
 
-    private void Update()
+    void Update()
     {
-        bgRenderer.material.mainTextureOffset += new Vector2(speed * Time.deltaTime, 0);
+        transform.position += new Vector3(speed * Time.deltaTime, 0);
+        if (transform.position.x < -target)
+        {
+            transform.position = new Vector3(target * 2 -9, transform.position.y);
+        }
     }
 }
