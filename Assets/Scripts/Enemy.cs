@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     public Rigidbody2D enemyRigidbody;
     public float speed;
     public float speed_cap;
+    public bool alive = true;
 
     public GameObject punch_Icon;
     public GameObject bone_Icon;
@@ -98,6 +99,7 @@ public class Enemy : MonoBehaviour
 
     IEnumerator Death()
     {
+        alive = false;
         SoundManager.Instance.PlaySound(SoundManager.Instance.Hit);
         enemyRigidbody.constraints = RigidbodyConstraints2D.None;
         yield return new WaitForSeconds(2f);

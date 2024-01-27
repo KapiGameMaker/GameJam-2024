@@ -27,13 +27,16 @@ public class DoDamage : MonoBehaviour
     }
     private void Attack()
     {
-        player.Hurt();
-        if(gameObject.name == "Bird")
+        if (GetComponent<Enemy>().alive)
         {
-            spawnBullet();
+            player.Hurt();
+            if (gameObject.name == "Bird")
+            {
+                spawnBullet();
+            }
+            GetComponent<Enemy>().DoDeath();
+            isAlreadyAttack = true;
         }
-        GetComponent<Enemy>().DoDeath();
-        isAlreadyAttack = true;
     }
 
     private void spawnBullet()
