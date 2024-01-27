@@ -91,9 +91,15 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public void DoDeath()
+    {
+        StartCoroutine(Death());
+    }
+
     IEnumerator Death()
     {
         SoundManager.Instance.PlaySound(SoundManager.Instance.Hit);
+        enemyRigidbody.constraints = RigidbodyConstraints2D.None;
         yield return new WaitForSeconds(2f);
         Destroy(gameObject);
     }

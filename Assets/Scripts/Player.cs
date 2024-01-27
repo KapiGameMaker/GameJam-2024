@@ -4,21 +4,19 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public int hp = 3; 
+    public int hp = 3;
+    Animator anim;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();    
+    }
 
     public void Hurt()
     {
+        anim.SetTrigger("damage");
         hp--;
         Debug.Log(hp);
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Bullet"))
-        {
-            this.Hurt();
-            Destroy(collision.gameObject);
-        }
     }
 
     // play animation

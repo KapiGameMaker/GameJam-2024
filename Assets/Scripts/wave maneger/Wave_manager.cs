@@ -23,6 +23,7 @@ public class Wave_Maneger : MonoBehaviour
                 set.weakness2 = wave[i].weakness2.ToString();
                 if (wave[i].isRight)
                 {
+                    enemy.transform.localScale = new Vector3(-1, 1, 1);
                     set.speed *= -1;
                 }
                 set.speed_cap = wave[i].speed;

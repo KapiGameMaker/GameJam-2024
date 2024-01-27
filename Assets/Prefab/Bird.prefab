@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3058752089282074735}
+  - component: {fileID: 4985702614293775400}
   - component: {fileID: 6028114987042158721}
   - component: {fileID: 8511913156615537092}
   - component: {fileID: 5130668850610668427}
@@ -37,6 +38,19 @@ Transform:
   - {fileID: 6760964726434510536}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4985702614293775400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7058785305967970848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e4ba67921af33746a608e8c5493f130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  birdBullet: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!114 &6028114987042158721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,6 +72,9 @@ MonoBehaviour:
   bin_Icon: {fileID: 5267136576992256311, guid: 01bbe1a11a663e94ca91a4e0cadb7b99, type: 3}
   weakness1: 
   weakness2: 
+  bar: {fileID: 0}
+  weaknessIcon1: {fileID: 0}
+  weaknessIcon2: {fileID: 0}
 --- !u!212 &8511913156615537092
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -136,7 +153,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 2
+  m_Constraints: 6
 --- !u!70 &112042909587671093
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
