@@ -389,8 +389,15 @@ MonoBehaviour:
     spawnPoint: {fileID: 1793724683}
     spawn_time: 1
     speed: 1
-    isRight: 1
+    isRight: 0
     weakness1: 1
+    weakness2: 2
+  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
+    spawnPoint: {fileID: 528504928}
+    spawn_time: 1
+    speed: 1
+    isRight: 1
+    weakness1: 2
     weakness2: 2
 --- !u!4 &197260922
 Transform:
