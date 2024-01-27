@@ -5,6 +5,7 @@ public struct Wave
 {
     public enum Weakness
     {
+        none,
         punch,
         bone,
         trash
