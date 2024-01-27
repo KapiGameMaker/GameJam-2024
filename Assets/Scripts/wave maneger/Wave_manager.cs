@@ -2,10 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Wave_Maneger : MonoBehaviour
 {
-    private float currentTime = 0;
+    public float currentTime = 0;
 
     public List<Wave> wave;
 
@@ -29,6 +30,16 @@ public class Wave_Maneger : MonoBehaviour
                 set.speed_cap = wave[i].speed;
                 wave.Remove(wave[i]);
             }
-        }  
+        }
+
+        EndGame();
+    }
+
+    private void EndGame()
+    {
+        if (currentTime >= 180 || Input.GetKeyDown(KeyCode.P))
+        {
+            SceneManager.LoadScene("CutScene3");
+        }
     }
 }
