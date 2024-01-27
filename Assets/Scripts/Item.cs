@@ -23,7 +23,7 @@ public class Item : MonoBehaviour
     void Update()
     {
         UpdateTimeCounter();
-        if (pickState && currentTime >= 3f)
+        if (pickState && currentTime >= 1f)
         {
             ReturnItemToSlot();
         }
