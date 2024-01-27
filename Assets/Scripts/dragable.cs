@@ -29,12 +29,15 @@ public class dragable : MonoBehaviour
         {
             // Fetch the first collider.
             // NOTE: We could do this for multiple colliders.
+            
             Collider2D collider = Physics2D.OverlapPoint(worldPos, m_DragLayers);
             if (collider != null) Enemy = collider.gameObject;
             if (Enemy != null)
             {
+                SoundManager.Instance.PlaySound(SoundManager.Instance.Grab);
                 item = Enemy.GetComponent<Item>();
                 item.pickState = false;
+                item.GrabArt();
                 if (!collider)
                     return;
 
@@ -58,6 +61,7 @@ public class dragable : MonoBehaviour
         {
             if (Enemy != null)
             {
+                SoundManager.Instance.PlaySound(SoundManager.Instance.thrown);
                 item.pickState = true;
                 Enemy = null;
                 item = null;

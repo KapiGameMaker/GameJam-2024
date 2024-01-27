@@ -11,6 +11,8 @@ public class Enemy : MonoBehaviour
         Bin
     }
 
+    [SerializeField] AudioClip hit;
+
     public Rigidbody2D enemyRigidbody;
     public float speed;
     public float speed_cap;
@@ -47,6 +49,7 @@ public class Enemy : MonoBehaviour
 
     IEnumerator Death()
     {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.Hit);
         yield return new WaitForSeconds(2f);
         Destroy(gameObject);
     }

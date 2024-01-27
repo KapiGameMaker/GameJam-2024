@@ -6,10 +6,19 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Item : MonoBehaviour
 {
+    private SpriteRenderer spriteRenderer;
+
+    [SerializeField] Sprite ArtSlot;
+    [SerializeField] Sprite ArtGrab;
     [SerializeField] Transform target;
     [SerializeField] float lerpDuration = 1f;
     public bool pickState;
     public float currentTime = 0f;
+
+    private void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     void Update()
     {
@@ -54,5 +63,16 @@ public class Item : MonoBehaviour
         transform.rotation = Quaternion.Euler(Vector3.zero);
         gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+        SlotArt();
+    }
+
+    public void SlotArt()
+    {
+        spriteRenderer.sprite = ArtSlot;
+    }
+
+    public void GrabArt()
+    {
+        spriteRenderer.sprite = ArtGrab;
     }
 }
