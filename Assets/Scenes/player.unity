@@ -173,17 +173,23 @@ MonoBehaviour:
     spawnPoint: {fileID: 1365493507}
     spawn_time: 1
     speed: 5
-    isLeft: 1
+    isRight: 0
+    weakness1: 0
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
     spawnPoint: {fileID: 347569683}
     spawn_time: 2
     speed: 5
-    isLeft: 0
+    isRight: 0
+    weakness1: 0
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
     spawnPoint: {fileID: 1128236699}
     spawn_time: 3
     speed: 5
-    isLeft: 1
+    isRight: 0
+    weakness1: 0
+    weakness2: 0
 --- !u!114 &239578138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -781,11 +787,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3058752089282074735, guid: a8ba922886198a84183a0247e4f17519, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.44
+      value: 5.08
       objectReference: {fileID: 0}
     - target: {fileID: 3058752089282074735, guid: a8ba922886198a84183a0247e4f17519, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.71
+      value: 1.71
       objectReference: {fileID: 0}
     - target: {fileID: 3058752089282074735, guid: a8ba922886198a84183a0247e4f17519, type: 3}
       propertyPath: m_LocalPosition.z
