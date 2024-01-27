@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 6028114987042158721}
   - component: {fileID: 8511913156615537092}
   - component: {fileID: 5130668850610668427}
-  - component: {fileID: 2991961127226942750}
+  - component: {fileID: 7666335408248752522}
+  - component: {fileID: 112042909587671093}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -47,9 +48,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f79f391313f98f94281291862d306c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hit: {fileID: 0}
   enemyRigidbody: {fileID: 5130668850610668427}
-  speed: 1000
-  speed_cap: 0
+  speed: -1000
+  speed_cap: 0.05
   weapon: 0
 --- !u!212 &8511913156615537092
 SpriteRenderer:
@@ -92,12 +94,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.042452812, g: 0.842155, b: 1, a: 1}
+  m_Sprite: {fileID: 857844950, guid: 6122d0be05f8bf84a80c92f809b6407f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 10.000001, y: 10.000001}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -130,8 +132,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 2
---- !u!61 &2991961127226942750
-BoxCollider2D:
+--- !u!95 &7666335408248752522
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7058785305967970848}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 61437f5b3960d0b4e8b00f63b994db1b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!70 &112042909587671093
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -162,16 +185,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Offset: {x: -0.18531156, y: 0.110648036}
+  m_Size: {x: 1.4147716, y: 2.9998262}
+  m_Direction: 0
