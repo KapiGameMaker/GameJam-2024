@@ -51,21 +51,21 @@ public class WaveManagerEditor : Editor
             GUIContent.none
         );
 
-        EditorGUI.LabelField(new Rect(rect.x + 400, rect.y, 100, EditorGUIUtility.singleLineHeight), "isRight");
+        EditorGUI.LabelField(new Rect(rect.x + 400, rect.y, 100, EditorGUIUtility.singleLineHeight), "move to right");
         EditorGUI.PropertyField(
-            new Rect(rect.x + 440, rect.y, 30, EditorGUIUtility.singleLineHeight),
+            new Rect(rect.x + 480, rect.y, 30, EditorGUIUtility.singleLineHeight),
             element.FindPropertyRelative("isRight"),
             GUIContent.none
         );
 
         EditorGUI.PropertyField(
-            new Rect(rect.x + 480, rect.y, 50, EditorGUIUtility.singleLineHeight),
+            new Rect(rect.x + 500, rect.y, 50, EditorGUIUtility.singleLineHeight),
             element.FindPropertyRelative("weakness1"),
             GUIContent.none
         );
 
         EditorGUI.PropertyField(
-            new Rect(rect.x + 530, rect.y, 50, EditorGUIUtility.singleLineHeight),
+            new Rect(rect.x + 570, rect.y, 50, EditorGUIUtility.singleLineHeight),
             element.FindPropertyRelative("weakness2"),
             GUIContent.none
         );
