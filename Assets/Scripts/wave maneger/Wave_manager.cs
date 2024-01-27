@@ -19,7 +19,7 @@ public class Wave_Maneger : MonoBehaviour
             {
                 GameObject enemy = Instantiate(wave[i].enemy, wave[i].spawnPoint.transform);
                 Enemy set = enemy.GetComponent<Enemy>();
-                if (wave[i].isLeft)
+                if (wave[i].isRight)
                 {
                     set.speed *= -1;
                 }
