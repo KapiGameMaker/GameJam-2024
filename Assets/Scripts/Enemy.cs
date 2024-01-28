@@ -46,10 +46,16 @@ public class Enemy : MonoBehaviour
         if(weakness2 == "None") { isWeakness2hit = true; }
 
         bar = transform.Find("Canvas").transform.Find("bar");
-        weaknessIcon1 = SetIcon(weakness1);
-        weaknessIcon2 = SetIcon(weakness2);
-        slot1 = Instantiate(weaknessIcon1, bar);
-        slot2 = Instantiate(weaknessIcon2, bar);
+        if (weakness1 != "None") 
+        {
+            weaknessIcon1 = SetIcon(weakness1);
+            slot1 = Instantiate(weaknessIcon1, bar);
+        }
+        if (weakness2 != "None")
+        {
+            weaknessIcon2 = SetIcon(weakness2);
+            slot2 = Instantiate(weaknessIcon2, bar);
+        }
     }
 
     private GameObject SetIcon(string name)
@@ -58,34 +64,31 @@ public class Enemy : MonoBehaviour
         {
             case "Punch":
                 return punch_Icon;
-                break;
             case "Bone":
                 return bone_Icon;
-                break;
             case "Bin":
                 return bin_Icon;
-                break;
             default:
                 return null;
-                break;
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag(weakness1))
+        if (collision.gameObject.CompareTag(weakness1) && !isWeakness1hit)
         {
-            isWeakness1hit=true;
+            isWeakness1hit = true;
+            SoundManager.Instance.PlaySound(SoundManager.Instance.Hit);
             Destroy(slot1);
         }
 
-        if (collision.gameObject.CompareTag(weakness2))
+        if (collision.gameObject.CompareTag(weakness2) && !isWeakness2hit)
         {
             isWeakness2hit = true;
+            SoundManager.Instance.PlaySound(SoundManager.Instance.Hit);
             Destroy(slot2);
         }
 
-        if(isWeakness1hit && isWeakness2hit)
+        if (isWeakness1hit && isWeakness2hit)
         {
             enemyRigidbody.constraints = RigidbodyConstraints2D.None;
             StartCoroutine(Death());
@@ -100,8 +103,8 @@ public class Enemy : MonoBehaviour
     IEnumerator Death()
     {
         alive = false;
-        SoundManager.Instance.PlaySound(SoundManager.Instance.Hit);
         enemyRigidbody.constraints = RigidbodyConstraints2D.None;
+        GetComponent<Collider2D>().isTrigger = true;
         yield return new WaitForSeconds(2f);
         Destroy(gameObject);
     }

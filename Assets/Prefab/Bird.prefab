@@ -67,6 +67,7 @@ MonoBehaviour:
   enemyRigidbody: {fileID: 5130668850610668427}
   speed: -1000
   speed_cap: 0.05
+  alive: 1
   punch_Icon: {fileID: 5267136576992256311, guid: 35edb4aeec6996b42aac806e01ecb573, type: 3}
   bone_Icon: {fileID: 5267136576992256311, guid: 6bf674e0b17caa7418e335b161dd40fc, type: 3}
   bin_Icon: {fileID: 5267136576992256311, guid: 01bbe1a11a663e94ca91a4e0cadb7b99, type: 3}
@@ -183,12 +184,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.18011945, y: -1.341025}
-  m_Size: {x: 1.840373, y: 0.71931106}
-  m_Direction: 1
+  m_Offset: {x: -0.019246101, y: -1.3410249}
+  m_Size: {x: 1.7991021, y: 1.7991021}
+  m_Direction: 0
 --- !u!95 &3460886294108720105
 Animator:
   serializedVersion: 5

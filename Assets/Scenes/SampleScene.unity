@@ -384,259 +384,456 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e365c505ae54dc24380f5982b73d5531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentTime: 0
   wave:
   - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
     spawnPoint: {fileID: 1793724683}
-    spawn_time: 3
+    spawn_time: 5
     speed: 0.02
     isRight: 0
     weakness1: 1
-    weakness2: 2
-  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
     spawn_time: 10
     speed: 0.02
-    isRight: 1
-    weakness1: 2
-    weakness2: 2
+    isRight: 0
+    weakness1: 3
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
     spawnPoint: {fileID: 528504928}
     spawn_time: 15
     speed: 0.02
     isRight: 1
     weakness1: 2
-    weakness2: 2
-  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
     spawn_time: 20
     speed: 0.02
-    isRight: 1
-    weakness1: 2
-    weakness2: 2
+    isRight: 0
+    weakness1: 3
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
     spawnPoint: {fileID: 528504928}
-    spawn_time: 25
+    spawn_time: 24
     speed: 0.02
     isRight: 1
-    weakness1: 2
-    weakness2: 2
+    weakness1: 1
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
     spawnPoint: {fileID: 528504928}
-    spawn_time: 30
-    speed: 0.02
+    spawn_time: 28
+    speed: 0.04
     isRight: 1
     weakness1: 2
-    weakness2: 2
-  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
+    spawn_time: 33
+    speed: 0.04
+    isRight: 0
+    weakness1: 1
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
     spawn_time: 35
     speed: 0.02
-    isRight: 1
-    weakness1: 2
-    weakness2: 2
-  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
-    spawn_time: 40
+    isRight: 0
+    weakness1: 1
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1848256453}
+    spawn_time: 37
     speed: 0.02
     isRight: 1
     weakness1: 2
-    weakness2: 2
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
+    spawnPoint: {fileID: 1605578076}
+    spawn_time: 39
+    speed: 0.02
+    isRight: 0
+    weakness1: 2
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
     spawnPoint: {fileID: 528504928}
-    spawn_time: 45
+    spawn_time: 42
     speed: 0.02
     isRight: 1
-    weakness1: 2
-    weakness2: 2
+    weakness1: 3
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
     spawnPoint: {fileID: 528504928}
+    spawn_time: 46
+    speed: 0.04
+    isRight: 1
+    weakness1: 2
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
+    spawnPoint: {fileID: 1605578076}
     spawn_time: 50
-    speed: 0.02
+    speed: 0.04
+    isRight: 0
+    weakness1: 2
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
+    spawn_time: 54
+    speed: 0.04
+    isRight: 0
+    weakness1: 1
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1848256453}
+    spawn_time: 57
+    speed: 0.04
+    isRight: 1
+    weakness1: 3
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1848256453}
+    spawn_time: 59
+    speed: 0.04
+    isRight: 1
+    weakness1: 1
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
+    spawn_time: 61
+    speed: 0.04
+    isRight: 0
+    weakness1: 3
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1848256453}
+    spawn_time: 63
+    speed: 0.04
+    isRight: 1
+    weakness1: 3
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
+    spawn_time: 64
+    speed: 0.04
+    isRight: 0
+    weakness1: 2
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
+    spawn_time: 66.5
+    speed: 0.06
+    isRight: 0
+    weakness1: 1
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1848256453}
+    spawn_time: 69
+    speed: 0.06
     isRight: 1
     weakness1: 2
-    weakness2: 2
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
+    spawn_time: 71.5
+    speed: 0.06
+    isRight: 0
+    weakness1: 3
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1848256453}
+    spawn_time: 74
+    speed: 0.06
+    isRight: 1
+    weakness1: 2
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
-    spawn_time: 55
-    speed: 0.02
-    isRight: 1
+    spawnPoint: {fileID: 1605578076}
+    spawn_time: 77
+    speed: 0.05
+    isRight: 0
     weakness1: 2
-    weakness2: 2
-  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
-    spawn_time: 60
-    speed: 0.02
-    isRight: 1
-    weakness1: 2
-    weakness2: 2
-  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
-    spawn_time: 65
-    speed: 0.02
-    isRight: 1
-    weakness1: 2
-    weakness2: 2
-  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
-    spawn_time: 70
-    speed: 0.02
-    isRight: 1
-    weakness1: 2
-    weakness2: 2
-  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
-    spawn_time: 75
-    speed: 0.02
-    isRight: 1
-    weakness1: 2
-    weakness2: 2
-  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
-    spawn_time: 80
-    speed: 0.02
-    isRight: 1
-    weakness1: 2
-    weakness2: 2
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
+    spawn_time: 81
+    speed: 0.05
+    isRight: 0
+    weakness1: 3
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
     spawnPoint: {fileID: 528504928}
     spawn_time: 85
-    speed: 0.02
+    speed: 0.05
     isRight: 1
+    weakness1: 1
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1848256453}
+    spawn_time: 89
+    speed: 0.05
+    isRight: 1
+    weakness1: 1
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
+    spawnPoint: {fileID: 1605578076}
+    spawn_time: 93
+    speed: 0.05
+    isRight: 0
     weakness1: 2
-    weakness2: 2
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
+    spawn_time: 96
+    speed: 0.05
+    isRight: 0
+    weakness1: 2
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
     spawnPoint: {fileID: 528504928}
-    spawn_time: 90
-    speed: 0.02
+    spawn_time: 99
+    speed: 0.05
     isRight: 1
+    weakness1: 3
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
+    spawnPoint: {fileID: 1605578076}
+    spawn_time: 104
+    speed: 0.04
+    isRight: 0
     weakness1: 2
-    weakness2: 2
+    weakness2: 1
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
+    spawn_time: 109
+    speed: 0.04
+    isRight: 0
+    weakness1: 3
+    weakness2: 1
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
     spawnPoint: {fileID: 528504928}
-    spawn_time: 95
-    speed: 0.02
+    spawn_time: 112
+    speed: 0.03
+    isRight: 1
+    weakness1: 1
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1848256453}
+    spawn_time: 114
+    speed: 0.03
     isRight: 1
     weakness1: 2
-    weakness2: 2
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
     spawnPoint: {fileID: 528504928}
-    spawn_time: 100
-    speed: 0.02
+    spawn_time: 117
+    speed: 0.03
+    isRight: 1
+    weakness1: 3
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1848256453}
+    spawn_time: 119
+    speed: 0.03
     isRight: 1
     weakness1: 2
-    weakness2: 2
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
     spawnPoint: {fileID: 528504928}
-    spawn_time: 105
-    speed: 0.02
+    spawn_time: 121
+    speed: 0.03
     isRight: 1
     weakness1: 2
-    weakness2: 2
+    weakness2: 1
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
     spawnPoint: {fileID: 528504928}
-    spawn_time: 110
-    speed: 0.02
+    spawn_time: 123
+    speed: 0.04
     isRight: 1
     weakness1: 2
-    weakness2: 2
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
-    spawn_time: 115
-    speed: 0.02
-    isRight: 1
-    weakness1: 2
-    weakness2: 2
-  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
-    spawn_time: 120
-    speed: 0.02
-    isRight: 1
-    weakness1: 2
-    weakness2: 2
-  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
+    spawnPoint: {fileID: 1605578076}
     spawn_time: 125
-    speed: 0.02
+    speed: 0.04
+    isRight: 0
+    weakness1: 3
+    weakness2: 1
+  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
+    spawnPoint: {fileID: 528504928}
+    spawn_time: 128
+    speed: 0.04
     isRight: 1
-    weakness1: 2
-    weakness2: 2
+    weakness1: 3
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
     spawnPoint: {fileID: 528504928}
     spawn_time: 130
-    speed: 0.02
+    speed: 0.04
     isRight: 1
     weakness1: 2
-    weakness2: 2
+    weakness2: 1
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
+    spawn_time: 130
+    speed: 0.04
+    isRight: 0
+    weakness1: 2
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
+    spawnPoint: {fileID: 1605578076}
     spawn_time: 135
-    speed: 0.02
+    speed: 0.04
+    isRight: 0
+    weakness1: 3
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1848256453}
+    spawn_time: 135
+    speed: 0.04
     isRight: 1
     weakness1: 2
-    weakness2: 2
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
     spawnPoint: {fileID: 528504928}
+    spawn_time: 138
+    speed: 0.04
+    isRight: 1
+    weakness1: 1
+    weakness2: 2
+  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
+    spawnPoint: {fileID: 1605578076}
     spawn_time: 140
-    speed: 0.02
-    isRight: 1
+    speed: 0.06
+    isRight: 0
+    weakness1: 1
+    weakness2: 3
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
+    spawn_time: 142
+    speed: 0.06
+    isRight: 0
     weakness1: 2
-    weakness2: 2
+    weakness2: 3
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
     spawnPoint: {fileID: 528504928}
+    spawn_time: 144
+    speed: 0.06
+    isRight: 1
+    weakness1: 1
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1848256453}
     spawn_time: 145
-    speed: 0.02
+    speed: 0.06
     isRight: 1
     weakness1: 2
-    weakness2: 2
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
-    spawn_time: 150
-    speed: 0.02
+    spawnPoint: {fileID: 1605578076}
+    spawn_time: 146
+    speed: 0.06
+    isRight: 0
+    weakness1: 3
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
+    spawn_time: 148.5
+    speed: 0.05
+    isRight: 0
+    weakness1: 2
+    weakness2: 1
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1848256453}
+    spawn_time: 151
+    speed: 0.05
     isRight: 1
     weakness1: 2
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
+    spawn_time: 153
+    speed: 0.05
+    isRight: 0
+    weakness1: 1
     weakness2: 2
-  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1848256453}
     spawn_time: 155
-    speed: 0.02
+    speed: 0.05
     isRight: 1
+    weakness1: 3
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
+    spawn_time: 158
+    speed: 0.05
+    isRight: 0
+    weakness1: 1
+    weakness2: 3
+  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
+    spawnPoint: {fileID: 1605578076}
+    spawn_time: 161
+    speed: 0.08
+    isRight: 0
     weakness1: 2
-    weakness2: 2
+    weakness2: 3
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
+    spawn_time: 164
+    speed: 0.08
+    isRight: 0
+    weakness1: 1
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
     spawnPoint: {fileID: 528504928}
-    spawn_time: 160
-    speed: 0.02
+    spawn_time: 167
+    speed: 0.08
     isRight: 1
     weakness1: 2
-    weakness2: 2
-  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
-    spawn_time: 165
-    speed: 0.02
-    isRight: 1
-    weakness1: 2
-    weakness2: 2
-  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
+    weakness2: 1
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1848256453}
     spawn_time: 170
-    speed: 0.02
+    speed: 0.08
     isRight: 1
     weakness1: 2
+    weakness2: 1
+  - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
+    spawnPoint: {fileID: 1605578076}
+    spawn_time: 173
+    speed: 0.08
+    isRight: 0
+    weakness1: 3
+    weakness2: 0
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1793724683}
+    spawn_time: 176
+    speed: 0.08
+    isRight: 0
+    weakness1: 1
     weakness2: 2
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
     spawnPoint: {fileID: 528504928}
-    spawn_time: 175
-    speed: 0.02
+    spawn_time: 178
+    speed: 0.08
+    isRight: 1
+    weakness1: 1
+    weakness2: 3
+  - enemy: {fileID: 7058785305967970848, guid: a8ba922886198a84183a0247e4f17519, type: 3}
+    spawnPoint: {fileID: 1848256453}
+    spawn_time: 179
+    speed: 0.08
     isRight: 1
     weakness1: 2
-    weakness2: 2
+    weakness2: 0
   - enemy: {fileID: 7058785305967970848, guid: f65e625a5863adb46a550718b8332878, type: 3}
-    spawnPoint: {fileID: 528504928}
+    spawnPoint: {fileID: 1605578076}
     spawn_time: 180
-    speed: 0.02
-    isRight: 1
-    weakness1: 2
-    weakness2: 2
+    speed: 0.08
+    isRight: 0
+    weakness1: 1
+    weakness2: 3
 --- !u!4 &197260922
 Transform:
   m_ObjectHideFlags: 0
@@ -1432,7 +1629,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1440,7 +1637,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &528504930
@@ -1833,7 +2030,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 282881420, guid: 016cf02ab89adc34cac6947af35bbe11, type: 3}
+  m_Sprite: {fileID: -1409322844, guid: 1e47fb92982fa414cac1a06c34f350b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2823,7 +3020,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2831,7 +3028,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1605578078
@@ -3443,7 +3640,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3451,7 +3648,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1793724685
@@ -3527,7 +3724,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3535,7 +3732,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1848256455
