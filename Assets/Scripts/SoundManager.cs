@@ -9,6 +9,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip Grab;
     public AudioClip Hit;
     public AudioClip thrown;
+    public AudioClip MCHit;
+
 
     // Singleton pattern to ensure only one instance exists
     private static SoundManager _instance;
