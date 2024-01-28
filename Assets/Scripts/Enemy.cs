@@ -37,7 +37,16 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        enemyRigidbody.AddForce(Vector2.ClampMagnitude(new Vector2(speed, 0), speed_cap));
+        //enemyRigidbody.AddForce(Vector2.ClampMagnitude(new Vector2(speed, 0), speed_cap));
+        // Get the current position
+        Vector3 currentPosition = transform.position;
+
+        // Calculate the new position based on speedCap
+        float horizontalMovement = speed_cap * Time.deltaTime;
+        Vector3 newPosition = currentPosition + new Vector3(horizontalMovement, 0f, 0f);
+
+        // Update the position
+        transform.position = newPosition;
     }
 
     private void SetUp()

@@ -25,9 +25,13 @@ public class Wave_Maneger : MonoBehaviour
                 if (wave[i].isRight)
                 {
                     enemy.transform.localScale = new Vector3(-1, 1, 1);
-                    set.speed *= -1;
                 }
-                set.speed_cap = wave[i].speed;
+                if (wave[i].isRight == false)
+                {
+                    set.speed_cap = -wave[i].speed;
+                }
+                else set.speed_cap = wave[i].speed;
+
                 wave.Remove(wave[i]);
             }
         }

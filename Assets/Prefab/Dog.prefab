@@ -65,7 +65,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hit: {fileID: 0}
   enemyRigidbody: {fileID: 5130668850610668427}
-  speed: -1000
+  speed: -10000
   speed_cap: 0.05
   alive: 1
   punch_Icon: {fileID: 5267136576992256311, guid: 35edb4aeec6996b42aac806e01ecb573, type: 3}
